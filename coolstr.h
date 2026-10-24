@@ -6,6 +6,8 @@ typedef struct CoolStr {
     size_t capacity;
 } coolstr_t;
 
-int init_coolstr(coolstr_t* dest, const char* src);
+coolstr_t* init_coolstr(coolstr_t* dest, const char* src);
 
 int add_coolstr(coolstr_t* dest, const char* data);
+
+
