@@ -7,6 +7,6 @@ int main(int argc, char** argv) {
         perror("fatal: No arguments provided.");
         return 1;
     }
-    printf("Just use which until this program builds itself!")
+    printf("Just use which until this program builds itself!");
     return 0;
 }
