@@ -1,0 +1,11 @@
+#pragma once 
+
+typedef struct CoolStr {
+    char* data;
+    size_t length;
+    size_t capacity;
+} coolstr_t;
+
+int init_coolstr(coolstr_t* dest, const char* src);
+
+int add_coolstr(coolstr_t* dest, const char* data);
