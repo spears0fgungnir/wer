@@ -11,4 +11,4 @@ coolstr_t* init_coolstr(coolstr_t* dest, const char* src);
 
 int add_coolstr(coolstr_t* dest, const char* data);
 
-
+// alebgra parsing library, haskell clone, lightweight video editor, your website etc etc
