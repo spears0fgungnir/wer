@@ -4,7 +4,7 @@
 
 int main(int argc, char** argv) {
     if (argc < 2) {
-        perror("fatal: No arguments provided.");
+        fprintf(stderr, "fatal: No arguments provided.");
         return 1;
     }
     printf("Just use which until this program builds itself!");
