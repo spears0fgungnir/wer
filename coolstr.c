@@ -8,7 +8,7 @@ coolstr_t* init_coolstr(const char* src) {
     if (tmp == NULL)
         return NULL;
 
-    char* tmp_data = (char*) malloc(sizeof(src));
+    char* tmp_data = (char*) malloc(sizeof(*src));
     if (tmp_data == NULL)
         return NULL;
     tmp->data = tmp_data;
