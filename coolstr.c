@@ -9,10 +9,12 @@ coolstr_t* init_coolstr(const char* src) {
         return NULL;
 
     char* tmp_data = (char*) malloc(sizeof(*src));
-    if (tmp_data == NULL)
+    if (tmp_data == NULL) {
+        free(tmp);
         return NULL;
-    tmp->data = tmp_data;
+    }
 
+    tmp->data = tmp_data;
     strcpy(tmp->data, src);
     size_t tmp_len = strlen(src);
     tmp->length = tmp_len;
